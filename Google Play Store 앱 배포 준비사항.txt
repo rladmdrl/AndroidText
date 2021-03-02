@@ -1,0 +1,12 @@
+Google Play Store APP 등록 준비사항
+
+1. playStore 개발자 등록
+   1.1 구글 계정
+   1.2 마켓 개발자 등록
+         - 25$-카드결재만 가능(visa, master)
+
+2. APP 업로드 준비
+   2.1    (signed:서명이 된) APK or AAB 파일
+   2.2    icon Image(512*512*32bit     .png파일)
+   2.3    1024*500*24bit    포스터같은 Image
+   2.4    ScreenShot Image 최소2장~최대8장  / phone, 7', 10' tablet 용   각 2장씩 [같은 이미지 가능]
