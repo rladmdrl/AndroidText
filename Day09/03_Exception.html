@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //예외처리 : 프로그램에 예기치않은 상황 발생시 다운되지 않도록 하는 기술
+
+        //alet('aaa');//여기서 에러가 나면 다음줄이 진행되지 않음.
+
+        try{
+            alet('aaa');
+        }catch(e){
+            document.write(e+'<br>');
+        }
+
+        document.write('예외처리...<br>');
+
+        //finally
+        try{
+            aaa();
+        }catch(e){
+            document.write('error<br>');
+        }finally{
+            document.write('여기는 에러여부와 상관없이 무조건 샐행<br>')
+
+        }
+
+        //throw - 일부러 에러를 발생해서 예외 상항 처리
+        try{
+            var a=10;
+            var b=15;
+
+            var c=a-b;
+            if(c<0) throw '음수결과는 나오면 안됨'
+            document.write('결과 ;'+c+'<br>');
+        }catch(e){
+            document.write('에러 :'+e+'<br>')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

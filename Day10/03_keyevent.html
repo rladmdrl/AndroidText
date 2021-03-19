@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kit event</title>
+    </head>
+    <body onkeypress="aaa()">
+        아무키나 입력해 보세요
+        <br><input type="text" name="" id="key1">
+        <br><input type="text" name="" id="key2">
+        <br>Shift키<input type="checkbox" name="" id="aa">
+    </body>
+    <script>
+        function aaa(){
+            //눌러진 키보드의 키값 얻어오기
+            var key=window.event.keyCode;
+            document.getElementById('key1').value=keyCode;
+            document.getElementById('key2').value=String.fromCharCode(keyCode);
+            BaseAudioContext.getElementById('aa').checked=event.shiftkey;
+        }
+    </script>
+
+</html>
