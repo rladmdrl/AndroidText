@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table test</title>
+    </head>
+    <body>
+        <table border="1">
+            <!-- 테이블 헤더 -->
+            <tr>
+                <th>no</th>
+                <th>name</th>
+                <th>message</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>same</td>
+                <td>Hello</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>dfme</td>
+                <td>반가워</td>
+                <!-- 각행 의 데이터개수가 다를 수도 있음 -->
+                <td>20210104</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- 셀병합 -->
+        <table border="1">
+            <!-- 테이블전체제목 -->
+            <!-- 테이블 제목은 작성위치와 상관없이 상단 배치됨.이게싫음 css로조절가능함 -->
+            <caption>테이블전체제목</caption>
+            <tr>
+                <!-- span이 동작하려면 비교할 수 있는 다른 줄 이 존재해야함 -->
+                <td  rowspan="2">111</td>
+                <td colspan="3">222</td>
+                <td>111</td>
+            </tr>
+            <tr>
+                <td>444</td>
+                <td>555</td>
+                <td>66666666</td>
+
+            </tr>
+            <!-- 테이블 안에 다른 요소들을 배치할수있음 -->
+            <table border="1" width="100%">
+                <tr>
+                    <td><a href="http://www.naver.com">NAVER</a></td>
+                    <td>
+                        <ul>
+                            <li>aaaa</li>
+                            <li>bbbb</li>
+                            <li>cccc</li>
+                            <li>dddd</li>
+                        </ul>
+                    </td>
+                    <td><img src="./images/cafelatte.jpg" alt="커피"></td>
+                </tr>
+            </table>
+
+        </table>
+    </body>
+</html>

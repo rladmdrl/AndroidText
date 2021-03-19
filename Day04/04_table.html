@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table</title>
+        
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>이름</th>
+                <th>이메일</th>
+            </tr>
+            <tr>
+                <td>김철수</td>
+                <td>rotorldi1541@gmail.com</td>
+            </tr>
+            <tr>
+                <td>김경희</td>
+                <td>rladmdrl1@naver.com</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>ghdrlfehd13@naver.com</td>
+            </tr>
+            <tr>
+                <td>김수진</td>
+                <td>tnwls@gmail.com</td>
+            </tr>
+        </table>
+
+        <!-- 내부스타일 작성 위치는 헤더 영역도 좋지만 바디도 괸찬음 순서상관없음 -->
+        <style>
+            table{
+                border:2px solid;
+                border-collapse: collapse;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+            th,td{border:1px solid; padding: 10px 5px;}
+            th{background-color: forestgreen; color: ghostwhite;}
+            tr:nth-child(2n){background-color: gold;}
+            /* 각줄의 첫번째 컬룸요소 */
+            td:first-child{width: 40%;}
+            th{border-bottom:double red;}
+
+            /* 태이블의 돔구조는 보이는것과 다를수 있음 */
+        </style>
+    </body>
+</html>

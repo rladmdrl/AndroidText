@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTTP request text</title>
+    </head>
+    <body>
+    
+
+    <!-- <form>요소 : ancgor처럼 다른 문서를 실행하지만 데이터를 전달할 수 있고 이동을 위한 별도의 input요소가 필요함 -->
+    
+    <!-- GET Method form 연습 -->
+    <form action="./getText.php" method="GET">
+        <input type="text" name="title" >
+        <input type="text" name="mag" >
+        <input type="submit" value="submit">
+
+    </form>
+
+
+    <form action="./postText.php" method="POST" >
+        <fieldset>
+            <legend>input &amp; post text</legend>
+
+            <label for="in">name :</label>
+            <input type="text" id="in" name="name" >
+            <br>
+            <label>bassword : <input type="password" name="pw"></label>
+            <p>
+                gender:
+                <label><input type="radio" name="gender" value="male" checked>남성</label>
+                <label><input type="radio" name="gender" value="female" checked>여성</label>
+            </p>
+
+            <p>
+                fruits:
+                <label><input type="checkbox" name="fruits[]" value="바나나">바나나</label>
+                <label><input type="checkbox" name="fruits[]" value="딸기">딸기</label>
+                <label><input type="checkbox" name="fruits[]" value="수박">수박</label>
+            </p>
+            <p>
+                <div>
+                    <select name="car">
+                        <optgroup>
+                            <option value="현대">현대</option>
+                            <option value="기아">기아</option>
+                            <option value="쉐보레">쉐보레</option>
+                            <option value="테슬라">테슬라</option>
+
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                <input type="submit" value="전송">
+        <input type="reset" value="취소">
+                </div>
+            </p>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+    </body>
+</html>

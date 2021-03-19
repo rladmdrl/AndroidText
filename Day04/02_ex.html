@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>02 ex</title>
+        <style>
+            #anchor:link{color: blue;}
+            #anchor:visited{color: brown;}
+            #anchor:hover{color: red; font-size: 2em;}
+            #anchor:active{color: yellow;}
+            p:active{color: yellow;}
+            p:hover{color: violet; font-size: 1.5em;}
+            ul.a{list-style-type: circle;}
+            ul.b{list-style-type: disc;}
+            ul.c{list-style-type: square; list-style-position: inside;}
+            /* 블릿기호를 이미지로 - 거의 안씀(사이즈 조절이 불가능함) */
+            ul.d{list-style-image: url("border.png"); list-style-position: inside;}
+            /* 순서가 있는 리스트 */
+            .e{ list-style-type: lower-latin;}
+            .e{ list-style-type: lower-alpha;}
+            .e{ list-style-type: lower-roman;}
+            .e{ list-style-type: lower-greek;}
+            .e{ list-style-type: upper-roman;}
+            .e{ list-style-type: decimal-leading-zero;}/*01,02.03*/
+            /* 실제 리스트는 메뉴를 만들때 많이 사용됨 */
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href="http://www.naver.com" id="anchor">aaaa</a>
+        <!-- anchor요소가 아니어도 : 의사 선택자 가능함 -->
+        <p>Hello world</p>
+        <hr>
+        <ul class="a">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+            
+        </ul>
+        <ul class="b">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+            
+        </ul>
+        <ul class="c">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+            
+        </ul>
+        <ul class="d">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+            
+        </ul>
+        <ol class="e">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+
+
+
+    </body>
+</html>

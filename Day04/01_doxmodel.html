@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>Box Model text</title>
+        <style>
+            p.border{
+                /* 경계선의 스타일(별도의 두깨지정 없이도 기본 3px) */
+                border-style: dotted; 
+                /* 상하좌우 로 나누어 스타일 가능 */
+                border-top-style: dotted;
+
+                /* 경계선의 두깨px,thick,medium,thin */
+                border-width: 13px;
+                border-bottom-width: 8px;
+
+                /* 색상 */
+                border-color: red;
+                border-left-color: blue;
+
+                /* 모서리 둥글게 */
+                border-radius: 20px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 0px;
+                /* 경계선 축약형 */
+                border: 3px solid green;
+                /* 경게선 이미지 */
+                border:30px solid transparent;
+                 border-image-source: url("./border.png");
+                 border-image-slice: 30 30;
+                 border-image-repeat: round;/*동일하게 반복하는 이미지*/
+                 /* stretch: 쭉늘려주는 이미지 */
+                 
+                 /* 요소의 크기 (블럭 요소만 가능한 속성) */
+                width: 70%;
+                height: 400px;/*높이는 기본적으로는%단위가 적용되지않음 (부모사이즈가 고정되지 않아서)*/
+
+                /* 요소의 중앙정렬: 블럭요소만 가능한 속성 */
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+
+
+            }
+            /* 인라인요소는 기본적으로 크기조정이 안됨 */
+            a{background-color: red;}
+            em{background-color: darkblue;}
+            img{width: 500px; border:1px solid blue}
+
+            #p1{background-color: red; height: 50px; margin: 0px; margin-bottom: 10px;}
+            #p2{background-color: blue; height: 50px; margin: 0px; margin-top: 10px;}
+
+            /* 음수 마진을 주면 겹침 */
+            #p1{background-color: red; height: 50px; margin: 0px; }
+            #p2{background-color: blue; height:50%; margin: 0px; margin-top: -10px;}
+
+            #bac{
+                background-color: chartreuse;
+                background-image: url("image.png");
+                background-size: 200px 100px;
+                background-repeat: no-repeat;
+                background-position: center;
+                 /* 축약형 : 색상 이미지 repeat 위치 */
+                background: dodgerblue url("image.png") no-repeat center;
+                /* 마진 축약형 */
+                margin: 20px;
+                padding: 30px
+
+
+            }
+           
+
+            
+            #aaav{
+                width: 60%;
+                height: 300px;
+                border:2px solid blue;
+                overflow: scroll;
+                margin-left: auto;
+                margin-right: auto;
+                color:rgb(69, 9, 138);
+
+                background: url("image.png") no-repeat center;
+                
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p class="border">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas amet quaerat a fuga, nemo assumenda tenetur voluptatem explicabo, nihil velit mollitia quod magni ipsam optio enim. Totam vitae consectetur pariatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nostrum eaque amet, corporis cupiditate incidunt qui, ut recusandae aut quaerat voluptatem eum accusamus, molestiae possimus sapiente nesciunt vel architecto maxime.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente quas soluta, illum harum recusandae numquam aliquid maxime, repellat voluptatem consequatur sunt iste? Nam tenetur ea quisquam in, fugiat sit?
+
+        </p>
+        <!-- 인라인요소: 너비조정 불가능 -->
+        <a href="">NAVER</a>
+        <em>fkdlsdjqt</em>
+
+        <!-- 인라인요소중에서 너비조정이 가능한 요소: 인라인블럭요소 -->
+        <img src="./back.jpg" alt="그림이닷">
+
+        <div class="age">
+            <p id="p1">sdfwdf</p>
+            <p id="p2">fewsdf</p>
+        </div>
+
+        <!-- 배경 -->
+        <p id="bac">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae magni possimus minus, mollitia distinctio eius pariatur cupiditate explicabo consequuntur hic non cumque illum dicta ad a tempore totam debitis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident totam in vitae est aspernatur, quasi dolorum odit rerum aliquid ratione nostrum quam fugit perspiciatis unde qui nobis ad assumenda.
+
+        </p>
+
+        <!-- background _ attachment -->
+        <p id="aaav">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio eius, vel molestiae autem beatae temporibus amet, ipsa, officiis cum quos. Debitis repellat nobis qui, saepe dolore aspernatur ex reiciendis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officiis dolorum quo esse, excepturi nam velit consequuntur, enim maiores iste, praesentium accusantium reiciendis aspernatur illo distinctio. Repellendus facere iste numquam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus quam aliquam maiores eligendi et eum fugiat? Optio omnis, aperiam voluptatum ut error eveniet consectetur? Molestias suscipit dicta natus illum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita distinctio, quas quibusdam culpa, ducimus aliquid nemo enim error iste, vitae iure? Provident molestias, consequatur neque libero reiciendis sit ullam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed quam a rerum reiciendis, voluptatum delectus fugiat minus deleniti asperiores ipsam animi, iusto recusandae quis esse excepturi, omnis quidem labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur unde, vitae sint laboriosam corporis suscipit quasi? Ipsam corrupti odit, delectus accusamus hic quia sequi? Exercitationem rerum quae quasi eligendi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consectetur aut nemo facere corrupti sapiente debitis nesciunt praesentium molestiae nulla distinctio ipsa, quae quisquam odio optio dignissimos autem numquam quis.
+
+        </p>
+
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Font CSS text</title>
+        <!-- 내부스타일 시트 -->
+        <style>
+            /* 이영역 안에서는CSS문법체계 따름 */
+            #aa{font-family: "Edwardian Script ITC",serif; font-size: 60px;}
+            p{font-family: "휴먼옛체",sans-serif;font-size: 60px;}
+            @font-face {
+                font-family: "My Font";
+                src: url("aaa.ttf")  }
+                p{font-family: "My Font",monospace;}
+                /* 폰트사이즈[단위:px,%,em(권장하는 단위)] */
+                p{font-size: 1.5em;}
+
+                /* bold,normal 100~900*/
+                p{font-weight: bold;}
+
+                /* normal,italic (필기체느낌의 기울기), oblique(그냥 기울기) */
+                p{font-style: normal;}
+
+                /* 위 폰트설정 3개의 축약 속성 */
+                /* 순서:(style)(weight)size(family) */
+                p{font: italic bold 1.8em "My Font",serif}
+
+                /* 텍스트관련 속성들 */
+
+                /* 택스트의 정렬 [android의 gravity속성과 같음] */
+               
+                p{text-align: justify;}/*양쪽졍렬*/
+                p{text-align: right;}/*왼쪽졍렬*/
+                p{text-align: center;}/*가운데*/
+                p{text-transform: lowercase;}
+                p{text-transform: capitalize;}/*각단어의 첫글짜*/
+                p{text-transform: uppercase;}
+
+                /* 텍스트 밑줄 꾸미기 */
+                p{text-decoration: underline;}
+                p{text-decoration: overline;}
+                p{text-decoration: line-through;}   /*취소선*/
+                p{text-decoration: none;}/*밑줄 없애기*/
+
+                /* 택스트 그림자 */
+                /* 순서:x축,y축,떠인는 정도,색상 */
+                p{text-shadow: 5px 3px 5px red;}
+
+                /* 워드 랩 */
+                p.aaa{
+                    border: 1px solid blue;
+                    width: 12em;/*숫자 글자 정도의 사이즈*/
+                    word-wrap: break-word;
+                }
+                /* 다중 컬룸 */
+                #lorem{
+                    column-count: 2;
+                    column-gap: 80px;
+                    column-rule: 4px dotted crimson;
+                }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <p id="aa">abcdefghijklnmopqrxtuvwsyg</p>
+        <p>안녕하세여</p>
+
+
+        <!-- word-wrap -->
+        <p class="aaa">
+            한글은 자동으로 위드랩이 됨. 그래서 부모영역을 벗어나지 않음. 
+            영어는 자동으로는 안됨 asfasfsafsafs  asdfsfsafsafsafsafsafsafsfafsad safsafsafs afsafsa fsaasfsadfasf asfsafas ssfdsfsd
+        </p>
+
+        <!-- 다중 컬룸 (화면을 분할하여 사용) -->
+        <!-- 로렌입숨 무의미한 더미글자 레이아웃 있는 글자들이적힘 -->
+        <p id="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- 택스트언라인 블럭요소와 인라인 요소에서의 text-align 속성 적용 알아보기 -->
+        <!-- text-align은 블럭요소안의 콘탠츠 정렬임 -->
+        <div style="background-color: cyan;text-align: center; line-height: 5em;">Hello</div>
+        <span style="background-color: darkmagenta;text-align: center;">Hello</span>
+        </body>
+</html>

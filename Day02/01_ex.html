@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>media ex</title>
+    </head>
+    <body>
+        <!-- 크롬은 오토플레이 기능을 지원하지않음 이유-배터리낭비됨 -->
+        <audio src="./audio/old_pop.mp3" controls="controls" autoplay="autoplay">
+            만약 브라우저에서 audio라는 태그를 인식하지 못하면 이 글씨가 보입니다.
+        </audio>
+
+        <!-- 브라우제에 따른 음원의 유형에 대응하기 위해 <source>태그 사용권장 -->
+            <audio controls autoplay >
+                <source src="./audio/old_pop.mp3" type="audio/mp3">
+                <source src="">    
+            </audio>
+            <!--무료변환 사이트 https://www.online-convert.com/ -->
+
+            <video src="./video/trailer.ogv"controls >
+             이 브라우저는 video를 지원하지 않습니다
+            </video>
+            <!-- 브라우저에 따른 파일형식에 대응하기 위해 -->
+            <video controls poster="../Day01/images/coffee1.gif" width="300" height="150">
+                <source src="./video/trailer.mp4" type="video/mp4">
+                <source src="./video/trailer.ogv" type="video/ogg">
+                <source src="./video/trailer.webm" type="video/webm">
+            </video>
+            <br>
+            <hr>
+            <br>
+
+            <!-- iframe : imline frame - 다른 html문서를 보여주는 요소 -->
+            <iframe src="../Day01/01_ex.html" width="300" height="150"></iframe>
+
+            <!-- 다른 웹사이트의 문서도 표시가능 -->
+            <iframe src="https://www.naver.com" ></iframe>
+            <!-- 사이트중에서 동적웹페이지 서버에서 만든 사이트는 안보일수있음 -->
+            <iframe src="../Day01/01_ex.html" frameborder="0" height="200"></iframe>
+            <!-- 링크요소를 target속성을 사용하여 iframe에 열리는 문서를 변경할 수 있음 -->
+            <iframe src="" frameborder="1" name="age" height="900"></iframe>
+            <a href="../Day01/My.html" target="age">월드와이드웹 공식사이트</a>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- div : divide -  영역 부분 위한 요소 -->
+            <div style="background-color: yellow; border: 2px solid red; padding-left: 10px;">
+                <h2>title</h2>
+                <p>this is message</p>
+            </div>
+
+            <!-- <div>의 블럭요소 특징 -->
+                <p>
+                    안녕하세여 나는 <span style="color: rgba(240, 0, 0, 0.938);">홍길동</span> 입니다. 
+                </p>
+
+                <!-- div를 이용하여 웹사이트의 레이아웃(배치구조) 구조연습 -->
+            <div id="header" style="background-color: red;height: 150px;">
+                Header 영역
+            </div>
+            
+            <div id="content" style="background-color: royalblue;height: 150px;">
+                Content 영역
+            </div>  
+
+            <div id="footer" style="background-color: maroon;height: 20px;">
+                Footer 영역
+            </div>    
+            
+
+
+    </body>
+</html>

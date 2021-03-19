@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 입력전달받기</title>
+    <script>
+        function cal(){
+            var in1=document.getElementById('in1');
+            var in2=document.getElementById('in2');
+            var a=in1.value;
+            var d=in2.value;
+
+            var c=a+d;
+            c=parseInt(a)+parseInt(b);
+
+            var result=document.getElementById('result');
+            result.value=c;
+        }
+        function changeColor()  {
+            var e= document.getElementById("aa");
+            e.style.color='red';
+            e.style.backgroundColor='yellow';
+            e.style.border='2px solid blue';
+            //태그이름으로도가능함
+            var es=document.getElementsByTagName('h2');
+            //es는 배열임
+            es[0].style.color
+        }
+        function changeImage(){
+            //요소의name속성값으로 참조하기
+            var a =document.getElementsByName('abc');
+            a[0].src='../Day01/images/americano.jpg'
+        }
+           
+        
+    </script>
+</head>
+<body>
+     
+    <input type="text" name="" id="in1">
+    <input type="text" name="" id="in2">
+    <input type="button" value="계산" onclick="cal()">
+    <input type="text" name="" id="result" size="30">
+
+    <hr>
+    <!-- html요소의 특정 스타일변경 -->
+    <h2 id="aa">This is Heading</h2>
+    <button onclick="changeColor()">change backhround color</button>
+
+    <!-- 이미지변경 -->
+    <img src="../Day01/images/cappuccino.jpg" alt="cappuccino" width="30%" name="abc">
+    <button onclick="changeImage()">change image</button>
+<!-- HTML과 JS가 혼재되어 사용 -->
+<table border="1" style="text-align: center;">
+    <tr>
+        <td>번호</td>
+    </tr>
+
+    <!-- 여기서 반복문을 사용하기 위해 JS를 사용 -->
+    <script>
+        for(var i=0; i<10; i++){
+            document.write("<tr><td> "+ i +"</td></tr>");
+        }
+    </script>
+
+</table>
+
+</body>
+</html>

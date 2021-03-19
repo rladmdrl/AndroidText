@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 layout</title>
+    <style>
+        /* display속성 */
+        #aa{display: inline;}
+        #aa{display: inline-block;width: 200px;;}
+        img{display: block;}
+
+        /* display:none값 : 디스플레이를 하지않음.자리차지 하지 않음 */
+        li{display: initial; margin-right: 20px;}
+        #bb{display: none;}
+
+
+    </style>
+</head>
+<body>
+    <!-- display 속성 -->
+    <p id="aa">Hello world</p>
+    <a href="https://www.google.co.kr/webhp?tab=mw">Good gay</a>
+    <strong>good afternoon</strong>
+    <img src="./border.png" alt="border">
+
+    <ul>
+        <li>aaa</li>
+        <li id="bb">bbb</li>
+        <li>ccc</li>
+
+
+    </ul>
+
+    <hr>
+
+    <!-- 블럭요소와 인라인요소를 같이 사용할 때 고려할점 -->
+
+    <!-- 블럭요소안에 다른 블럭,인라인 요소를 넣을 수 있음. -->
+    <div style="background-color: lawngreen; border: solid; padding: 5px;">
+        Nice <p>aaa</p> world
+    </div>
+    <span style="background-color: rgb(0, 252, 176); border: solid; padding: 5px;">
+        Nice <p>aaa</p> world
+    </span>
+    <!-- 같은 p요소 안에 또 p요소를 넣으면 이상해짐 -->
+    <p style="background-color: rgb(0, 252, 176); border: solid; padding: 5px;">
+        Nice <p>aaa</p> world
+    </p>
+    <!-- 같은 요소 안에 같은 요소를 넣으면 이상해짐 -->
+    <h1 style="background-color: rgb(0, 252, 176); border: solid; padding: 5px;">
+        Nice <p>aaa</p> world
+    </h1>
+
+
+    <style>
+        
+        #one{background-color: blue;width: 200px;height: 50px;}
+        #asdf{background-color: rgb(251, 255, 0);width: 200px;height: 50px;position: absolute;
+        /*static원레놓여져야할 위치에 요소가 배치됨:left,top같은 속성이 무시됨
+        relative 원래 놓여져야할 위치를 기준으로 배치됨
+        absolute 문서의 좌상단을 기준으로 배치됨
+        absolute 는 기준점을 문서가 아니라 본인요소의 부모의 좌상단을 기준으로 바꿀 수 있음
+        기준점을 부모로 하고싶다면 부모요소의 포지션속성값이 static가 아니어야함*/
+        left: auto;right: auto;;
+
+        
+        }
+        #dwes{background-color: rgb(0, 255, 213);width: 200px;height: 50px;position: fixed;right: 10px;bottom: 0px;}
+    </style>
+    
+    <hr>
+    <!-- 요소의 위치를 지정하는 속성 -->
+    <!-- position속성 -->
+    <div class="aaa">
+        <p id="one">dlock #1</p>
+        <p id="asdf">dlock #2</p>
+        <p id="dwes">dlock #3</p>
+    </div>
+    
+</body>
+</html>

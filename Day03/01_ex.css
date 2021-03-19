@@ -1,0 +1,60 @@
+    /* 이 영역안에서는 CSS문법체계를 따름 */
+            /* 기본문법 - 선택자{속성:값;} */
+
+            /* 선택자 종류 */
+            /* 1.타입(요소종류) 선택자 */
+            h2{
+                background-color: aqua;
+                color: yellow;
+            }
+            p{color: rgb(49, 15, 200); font-family: serif;}
+
+            /* 2.전체선택자 */
+            *{
+                color: blue;font-style: italic;
+            }
+            /* 만약 같은 스타일적용시 개별선택자가 우선 적용됨(color적용되지않음) */
+
+            /* 3.아이디 선택자 */
+            #dmdrl{color: teal;}
+
+            /* 4.클래스 선택자 */
+            .rla{color: brown;}
+
+            /* 5.선택자 그룹 */
+            li,a{
+                color: darkorange;
+            }
+
+            /* 6.자식,자손 선택자 */
+            #ss>p{color: black;}
+            #ss p{
+                color: darkmagenta;
+            }
+            /* 아래둘은 완전히다름 */
+            p.aa{} 
+            p .aa{}
+
+            #kk ul.gg>li{background-color: darkturquoise;}
+
+
+            /* 7.속성 선택자 */
+            p[class]{font-size: 30px;}/*p속성 중에서도 클래스를 가직고있는놈*/
+            div[id="ss"]{font-weight: bold;}
+            /* 8.의사 선택자 */
+            /* :link,:visited는 브라우저마다 동적여부가 다름 */
+            a:link{color: darkblue;}
+            a:visited{color: rgb(8, 53, 253);}
+            a:hover{color: green; font-size: 28px;}
+            a:active{color: red;}
+            /* :hover는 반드시 :visited 다음에 작성,:active는:hover다음에써야함 */
+
+
+            /* 몇번째 자식요소인지를 선택자로 활용 */
+            #kk ul li:first-child{color: red;}
+            #kk ul li:last-child{color: rgba(47, 0, 255, 0.835);}
+            #kk ul li:nth-child(2){color: green;}
+
+            /* 수식을 이용해서 n번째 자식용소 선택 */
+            /* 홀수번째 줄의 배경색 변겅 */
+            table tr:nth-child(2n){background-color:rgb(8, 252, 211) ;}

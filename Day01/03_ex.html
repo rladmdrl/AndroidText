@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ex3
+        </title>
+        <body>
+            
+            <ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+                <li>ddd</li>
+            </ul>
+            <ol>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+                <li>ddd</li>
+            </ol>
+
+            <dl>
+                <dt>aaa </dt>
+                <dd>이것은 Definition Data입니다.</dd>
+                <dt>aaa </dt>
+                <dd>이것은 Definition Data입니다.</dd>
+                <dt>aaa </dt>
+                <dd>이것은 Definition Data입니다.</dd>
+            </dl>
+
+            <hr>
+            <!-- anchor 요소 <a> -->
+
+                <!-- 절대주소 지정 : 웹문서가 있는 서버 url까지 모두 기입하는 방식 -->
+                <a href="https://www.naver.com/" target="_blank">NAVER</a>
+                <br>
+                
+
+                <!-- 상대주소 지정:이 html문서가 있는 폴더를 기준으로 해당 문서의 경로 기입하는 방식 -->
+                <a href="./02_text.html">상대주소 : 같은 폴더의 다른 문서 열기</a>
+                <br>
+
+
+                <!-- 같은 html문서안에 id를 가진 요소위치로 스크롤 변경 -->
+
+                <a href="#rl">도움말 위치로 이동</a>
+                <br>
+                <br>
+                <p id="rl">도움말</p>
+
+                <!-- a요소가 인라인요소여서 줄바꿈을 위해 <br> 요소를 넣었는데.. 이방 법말고 -->
+                <p><a href="">aaa</a></p>
+
+                <!-- 리스트 항목에 링크달기 -->
+                <ul>
+                    <li><a href="">111</a></li>
+                    <li><a href="">222</a></li>
+                    <li><a href="">333</a></li>
+                </ul>
+
+
+                <!-- href의 반드시 웹문서(html)가 아니어도됨 -->
+                <p><a href="mailto:rotorldi1541@gmail.com">rotorldi1541@gmail.com</a></p>
+
+                <!-- 이미지보기 -->
+                <p><a href="https://pbs.twimg.com/profile_images/625719371/Valkyrie-Profile-Angels-1004.jpg">이미지보기</a></p>
+
+                <p><a href="./seolak.jpg">이미지링크</a></p>
+
+                <!-- 웹브라우저에서 보여줄 수 없는 문서의 형식(.hwp,.zip,.xls) 링크하면 다운로드 해버림 -->
+                <p><a href="http://mrhi2020.dothome.co.kr/aaa.zip">암축파일 다운로드</a></p>
+
+
+                <!-- 이미지 요소 : inline요소 -->
+                <img src="./seolak.jpg" alt="설악산">
+                <p><a href="http://mrhi2020.dothome.co.kr/aaa.zip"><img src="./seolak.jpg" alt="설악산"></a></p>
+                <p><a href="./images/coffee1.gif" target="_blank"><img src="./images/coffee1.gif" alt="커피" width="100"></a></p>
+
+        </body>
+    </head>
+</html>

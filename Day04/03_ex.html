@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navmenu</title>
+        <meta charset="utf-8">
+
+        <style>
+
+            ul{
+                list-style: none;
+                border-top: 3px solid red;
+                border-bottom: 3px solid red;
+                text-align: center;
+                padding: 10px 0;
+            }
+            /* 블럭요소인 li를 옆으로 배티하기 위해 특성 inline으로 변경 */
+            ul li{
+                display: inline;
+                padding: 0px 10px;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                
+
+            }
+            ul li a{text-decoration: none; color: black;}
+            ul li a:hover{text-decoration: underline;}
+            #abcd{background-color: rgb(163, 163, 163); text-align: center; padding: 3em 0em;
+            background-image: url("image.png"); background-size: cover; color: rgb(253, 245, 245);}
+            
+
+
+        </style>
+
+
+
+    </head>
+    <body>
+        <div id="abcd">
+            <h1>HOME PAGE</h1>
+            <p>This is my homepage</p>
+        </div>
+        <!-- 네비메뉴 -->
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

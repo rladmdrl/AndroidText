@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aa{
+            /* 원모양 */
+            width: 50px;
+            height: 50px;
+            border-radius: 12em;
+            background-color: green;
+
+            /* 원하는 좌표로 움직이려면 절대위치 지정필요 */
+            position: absolute;
+            /* 아래에서 설계한 애니메이션을 적용 */
+            animation-name: myanim;
+            animation-name: bounce;
+            /* 시간 */
+            animation-duration: 0.8s;
+            animation-iteration-count: 100;
+            animation-timing-function: ease-out;
+
+        }
+        /* 애니메이션의 동작을 설계 */
+        @keyframes myanim
+        {
+            0% {left: 0px; top: 0px;}
+            50% {left: 600px; top: 0px;}
+            100% {left: 0px;top: 0px;}
+
+
+
+        }
+        /* 다른동작의 애니메이션 :바운스*/
+        @keyframes bounce
+        {
+            0%,100%{bottom: 0px; animation-timing-function: ease-out;}
+            50%{bottom: 150px; animation-timing-function: ease-in;}
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="aa"></div>
+
+
+
+
+    
+</body>
+</html>
